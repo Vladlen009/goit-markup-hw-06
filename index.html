@@ -459,7 +459,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal is-hidden">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-icon-close" width="18" height="18">
@@ -467,19 +467,50 @@
           </svg>
         </button>
         <form class="contakt-form">
+          <p class="contakt-form-text">Оставьте свои данные, мы вам перезвоним</p>
           <label class="contakt-form-field">
-              Имя*
-            <input class="ontakt-form-input" type="text" />
+            <span class="contakt-form-imput-text">Имя</span>
+            <div class="contakt-form-imput-wrapper">
+            <input name="user_name" class="contakt-form-input" type="text" required/>
+            <svg class="contakt-form-input-icon" width="12" height="12">
+              <use href="./image/icons.svg#icon-form-imput-name"></use>
+            </svg>
+          </div>
           </label>
           <label class="contakt-form-field">
-            Телефон*
-          <input class="ontakt-form-input" type="text" />
+            <span class="contakt-form-imput-text">Телефон</span>
+            <div class="contakt-form-imput-wrapper">
+          <input name="user_phone" class="contakt-form-input" type="tel"required/>
+          <svg class="contakt-form-input-icon" width="12" height="12">
+            <use href="./image/icons.svg#icon-form-imput-tel"></use>
+          </svg>
+        </div>
         </label>
         <label class="contakt-form-field">
-            Коментарий*
-          <textarea name="" class="contakt-form-message"></textarea>
+          <span class="contakt-form-imput-text">Почта</span>
+          <div class="contakt-form-imput-wrapper">
+            <input name="user_mail" class="contakt-form-input" type="tel"required/>
+        <svg class="contakt-form-input-icon" width="12" height="12">
+          <use href="./image/icons.svg#icon-form-imput-mail"></use>
+        </svg>
+      </div>
+      </label>
+        <label class="contakt-form-field">
+          <span class="contakt-form-imput-text">Коментарий</span>
+          <textarea name="user_message" class="contakt-form-message" placeholder="Введите текст"></textarea>
         </label>
-
+        <div class="contakt-form-checkbox-wrapper">
+          <input
+          name="accept-policy"
+          type="checkbox"
+          class="contact-form-checkbox visually-hidden"
+          id="policy-checkbox"
+          required
+        />
+            <label for="" class="contakt-form-checkbox-label"
+            > Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+        </div>
+        <button type="submit" class="contakt-form-submit-btn">Отправить</button>
         </form>
       </div>
     </div>
