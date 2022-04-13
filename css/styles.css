@@ -955,6 +955,7 @@ margin-bottom: 4px;
   margin-top: 4px;
   padding: 12px 16px;
   resize: none;
+  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -972,7 +973,7 @@ margin-bottom: 4px;
 }
 
 .contact-form-checkbox-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .contact-form-checkbox-label {
@@ -998,28 +999,33 @@ margin-bottom: 4px;
 }
 
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
- background-image: url('../image/checkbox.svg');
+ background-image: url('../image/checkbox.svg#icon-vector');
  border-radius: 2px;
 }
 
 .contact-form-submit-btn {
   display: block;
   margin: 0 auto;
-  min-width: 160px;
-  padding: 12px 16px;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  background-color: transparent;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 250ms linear, color 250ms linear;
+  width: 200px;
+  height: 50px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #FFFFFF;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
+.contact-form-submit-btn:hover,
+contact-form-submit-btn:focus {
+
+}
 
 
 
