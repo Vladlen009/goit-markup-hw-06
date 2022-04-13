@@ -999,7 +999,6 @@ margin-bottom: 4px;
 
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
  background-image: url('../image/checkbox.svg');
- background: var(--color-hover);
  border-radius: 2px;
 }
 
