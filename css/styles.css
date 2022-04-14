@@ -730,7 +730,7 @@ height: 70px;
 }
 
 .footer-form-btn{
-  display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 200px;
@@ -743,6 +743,7 @@ height: 70px;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
+  margin-left: 12px;
 
   text-align: center;
   letter-spacing: 0.06em;
