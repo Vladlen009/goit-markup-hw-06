@@ -1152,7 +1152,7 @@ color: #757575;
 
 
 /*+*/.chackbox-accept-policy:checked + .contact-form-checkbox-agreement::before {
-  background-image: url(../iconcheck.svg);
+  background-image: url(../icon-blue-check.svg);
 }
 
 /*+*/.chackbox-accept-policy:focus + .contact-form-checkbox-agreement::before {
