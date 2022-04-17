@@ -688,9 +688,6 @@ height: 70px;
 }
 
 /*------------FORM FOOTER-----------*/
-/*+*/.subscribe-form {
-  margin-left: auto;
-}
 
 /*+*/.subscribe-name {
   margin-bottom: 20px;
@@ -811,7 +808,8 @@ height: 70px;
 
   padding: 6px 22px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-btn:not(:last-child) {
@@ -854,8 +852,8 @@ height: 70px;
   margin-bottom: 0;
 }
 
-.navigation-item:hover,
-.navigation-item:focus {
+.navigation-link:hover,
+.navigation-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
               0px 4px 4px rgba(0, 0, 0, 0.06), 
               1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -972,17 +970,16 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
+.modal-close-btn:hover .modal-icon-close,
+.modal-close-btn:focus .modal-icon-close {
+  fill: var(--color-hover);
+}
 
-  .modal-icon-close {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.modal-icon-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  .modal-icon-close:focus,
-  .modal-icon-close:hover {
-   fill: #2196F3;
-  }
-
-  .contakt-form-input-icon {
+.contakt-form-input-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -1006,15 +1003,17 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .contakt-form-field {
   display: block;
+
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.17;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 
-letter-spacing: 0.01em;
+  color: #757575;
 
-color: #757575;
+  margin-bottom: 4px;
 }
 
   /*+*/.contakt-form-input {
@@ -1041,19 +1040,6 @@ color: #757575;
 
 .contakt-form-input-icon{
   outline: none;
-}
-
-  /*+*/.contact-form-field {
-  display: block;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-
-  margin-bottom: 4px;
-
-  color: #757575;
 }
 
 /*+*/.contakt-form-imput-wrapper {
@@ -1148,11 +1134,13 @@ color: #757575;
   letter-spacing: 0.03em;
 
   color: var(--text-color);
+  
 }
 
 
 /*+*/.chackbox-accept-policy:checked + .contact-form-checkbox-agreement::before {
-  background-image: url(../icon-blue-check.svg);
+  background-image: url(../image/icon-check.svg);
+  background-position: center;
 }
 
 /*+*/.chackbox-accept-policy:focus + .contact-form-checkbox-agreement::before {
